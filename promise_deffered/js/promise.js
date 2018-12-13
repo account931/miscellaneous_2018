@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 	
 	
-	//  on button click
+	//  on button click runs runFunction_Promise() + .then()
 	// **************************************************************************************
     // **************************************************************************************
     //                                                                                     **
@@ -12,7 +12,7 @@ $(document).ready(function(){
 	$(document).on("click", '#promise', function() {   // this  click  is  used  to   react  to  newly generated cicles;
 	    showPreloader();
 		
-	    runFunction_Promise()
+	    runFunction_Promise()    //function that returns promise
 		    .then(
 			 responseZZ => {
                  //console.log(responseZZ);
@@ -34,13 +34,13 @@ $(document).ready(function(){
 	
 	
 	
-	
+	//function that returns promise
 	// **************************************************************************************
     // **************************************************************************************
     //                                                                                     ** 
 	function runFunction_Promise()
 	{
-		 return new Promise(function(resolve, reject) {
+		 return new Promise(function(resolveX, reject) {
 			 
 			 //
 			 // send  data  to  PHP handler  ************ 
@@ -52,14 +52,16 @@ $(document).ready(function(){
                  data: { 
 			         //serverCity:window.cityX
 			     },
+				 
                  success: function(dataZ) { //alert(data);
-				      resolve(dataZ);
+				      resolveX(dataZ);
                  },  //end success
 			     error: function (error) {
 				
-                 }	
+                 }
+                 		 
              });
-                                               
+                                              
         //  END AJAXed  part 
 			 //
 		 });
@@ -67,12 +69,12 @@ $(document).ready(function(){
 	
 	
 	
-	
+	//called in .then()
 	// **************************************************************************************
     // **************************************************************************************
     //                                                                                     ** 
 	function promiseOK(z){
-		hidePreloader();
+		hidePreloader(); //hide preloader
 		//alert("Done");
 		//alert(z.length);
 		var textX = z.length + " reports <br>";
@@ -91,7 +93,7 @@ $(document).ready(function(){
 	
 	
 	
-	
+	//Show loader
 	// **************************************************************************************
     // **************************************************************************************
     //                                                                                     ** 
