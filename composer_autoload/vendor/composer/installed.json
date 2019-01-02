@@ -1,0 +1,33 @@
+[
+    {
+        "name": "vineeth/calculator",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/vineeth030/calculator.git",
+            "reference": "b8f711bbac8814cfd6389103f7dd445aec1e906d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/vineeth030/calculator/zipball/b8f711bbac8814cfd6389103f7dd445aec1e906d",
+            "reference": "b8f711bbac8814cfd6389103f7dd445aec1e906d",
+            "shasum": ""
+        },
+        "time": "2018-07-13T07:24:19+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "vineeth",
+                "email": "vineeth030@gmail.com"
+            }
+        ],
+        "description": "A test package to do calculation between two numbers.",
+        "keywords": [
+            "demo",
+            "laravel"
+        ]
+    }
+]
