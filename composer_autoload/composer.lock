@@ -1,0 +1,49 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "35a029f70ad1e2ff1f9e44eb210fd553",
+    "packages": [
+        {
+            "name": "vineeth/calculator",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vineeth030/calculator.git",
+                "reference": "b8f711bbac8814cfd6389103f7dd445aec1e906d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vineeth030/calculator/zipball/b8f711bbac8814cfd6389103f7dd445aec1e906d",
+                "reference": "b8f711bbac8814cfd6389103f7dd445aec1e906d",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "vineeth",
+                    "email": "vineeth030@gmail.com"
+                }
+            ],
+            "description": "A test package to do calculation between two numbers.",
+            "keywords": [
+                "demo",
+                "laravel"
+            ],
+            "time": "2018-07-13T07:24:19+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "vineeth/calculator": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

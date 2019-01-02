@@ -1,0 +1,34 @@
+{
+    "name": "dima/botman",
+    "description": "full",
+    "authors": [
+        {
+            "name": "Dima",
+            "email": "account931@ukr.net"
+        }
+    ],
+   
+   "minimum-stability": "dev",
+	
+    "require": {
+        "vineeth/calculator": "dev-master"
+    },
+	
+	"_comment": "comment text goes here-> PSR-4 autoload-> it says, namespace 'Cubet' should be found in folder 'vendor'; Classmap is for classes that don't fin  PSR-4, specifies the folder where to look those classes  ",
+	
+	
+	
+    "autoload": {
+        "psr-4": {
+            "Cubet\\": "vendor" 
+        },
+		
+		
+	
+		"classmap": [
+		    "library/"
+        ]
+		
+		
+    }
+}
