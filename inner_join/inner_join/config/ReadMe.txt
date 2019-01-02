@@ -1,0 +1,1 @@
+Config  file  containing  access CONSTATNTS   for  server  settings
