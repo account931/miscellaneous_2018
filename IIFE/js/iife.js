@@ -4,12 +4,14 @@ $(document).ready(function(){
 	var getResult =(function () {
 		
 	    var d = "gone";
-	    alert(d);
+	    alert(d);  //will fire automatically, even without calling function  getResult();
 	
 	    return function bb(){
-		    alert(1111)
+		    alert(1111)  // will fire on;ly upon calling function  getResult();
 		};
     }() );
+	
+	
 	
 	
 	getResult();
