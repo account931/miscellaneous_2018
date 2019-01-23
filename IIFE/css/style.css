@@ -1,0 +1,35 @@
+/* Preloader, loctaed in views/llayout/main */
+#overlay {
+	display:none;
+	position:absolute;
+	top:-12%;
+	//left:40%;
+	width:100%;
+}
+
+
+#overlay img {
+	position:absolute;
+	width:67%;
+	top:0px;
+	left:18%;
+}
+
+
+@media screen and (max-width: 962px) {   
+  #overlay {
+	position:absolute;
+	top:5%;
+	width:100%;
+  }
+  
+  #overlay img {
+	position:absolute;
+	width:100%;
+	top:0px;
+	right:12%;
+	
+}
+ 
+}
+/* Preloader, located in views/layout/main */
