@@ -1,22 +1,26 @@
 $(document).ready(function(){
 	
-	//IIFE
+	//Revealing module pattern----------------
 	var getResult =(function () {
 		
-	    var d = "gone";
+	    var d = "I am used in revealing module pattern, fire automatically";
 	    alert(d);  //will fire automatically, even without calling function  getResult();
 	
 	    return function bb(){
-		    alert(1111)  // will fire on;ly upon calling function  getResult();
+		    alert("called in {function bb} inside RMP by calling {getResult()}")  // will fire only upon calling function  getResult();
 		};
     }() );
-	
-	
 	
 	
 	getResult();
 	
 	
+	
+	//IIFE-------------------------------------
+	(function () {
+    // Code goes here
+	    alert("Immediately-Invoked Function Expression) - IIFE, fires automatically"); //will fire automatically
+    })();
 	
 	
 });
