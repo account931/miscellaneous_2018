@@ -1,6 +1,11 @@
 $(document).ready(function(){
 	
-	
+	//check if Promise is supported in browser
+	if (Promise){
+		//alert("OK");
+	} else {
+		alert("Promise is not supported in your browser");
+	}
 
 	
 	
@@ -14,17 +19,21 @@ $(document).ready(function(){
 		
 	    runFunction_Promise()    //function that returns promise
 		    .then(
-			 responseZZ => {
-                 //console.log(responseZZ);
-                 //return user;
-				 promiseOK(responseZZ);  //run in .then
-             },
+			
+			     //if runFunction_Promise() was successful
+			     responseZZ => {    //this name {responseZZ} must be the same as in {promiseOK(responseZZ)}
+                     //console.log(responseZZ);
+                     //return user;
+				     promiseOK(responseZZ);  //run in .then
+                 } ,
 	
-			//error handler
-            error => {
-               // вторая функция - запустится при вызове reject
-               alert("Rejected: " + error); // error - аргумент reject
-            }
+			     //error handler if runFunction_Promise() failed
+                 errorX => {  //this name {errorX} must be the same as in {alert("Rejected: " + errorX))}
+                     // вторая функция - запустится при вызове reject
+                     alert("Rejected: " + errorX); // errorX is a rejectMe argument
+			         hidePreloader(); 
+			         $("#result").stop().fadeOut("slow",function(){ $(this).html(" Promise failed")}).fadeIn(2000);
+                 }
 		   
             ); 
 	   
@@ -40,7 +49,7 @@ $(document).ready(function(){
     //                                                                                     ** 
 	function runFunction_Promise()
 	{
-		 return new Promise(function(resolveX, reject) {
+		 return new Promise(function(resolveX, rejectMe) {
 			 
 			 //
 			 // send  data  to  PHP handler  ************ 
@@ -54,16 +63,17 @@ $(document).ready(function(){
 			     },
 				 
                  success: function(dataZ) { //alert(data);
-				      resolveX(dataZ);
+				    resolveX(dataZ); //MUST HAVE, without it Promise will never switch to .then()
                  },  //end success
 			     error: function (error) {
-				
+				    rejectMe(error);
                  }
                  		 
              });
                                               
         //  END AJAXed  part 
 			 //
+			
 		 });
 	}
 	
