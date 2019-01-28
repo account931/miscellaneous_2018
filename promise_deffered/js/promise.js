@@ -27,15 +27,36 @@ $(document).ready(function(){
 				     promiseOK(responseZZ);  //run in .then
                  } ,
 	
-			     //error handler if runFunction_Promise() failed
+			     //error handler if runFunction_Promise() failed, 
+				 //it is commented as we copied it for convenience to {.catch(errorX => { }}
+				 /*
                  errorX => {  //this name {errorX} must be the same as in {alert("Rejected: " + errorX))}
                      // вторая функция - запустится при вызове reject
                      alert("Rejected: " + errorX); // errorX is a rejectMe argument
 			         hidePreloader(); 
 			         $("#result").stop().fadeOut("slow",function(){ $(this).html(" Promise failed")}).fadeIn(2000);
                  }
+				 */
 		   
-            ); 
+            )
+			
+			//then 2 chaining 
+			.then(
+			//below commented is quivalent to:   responseZZ => { alert("Done"); } == function resppp(){alert("Done");}
+			//function resppp(){alert("Done");}
+			   responseZZ => { 
+			        alert("Done");
+				}
+		     )
+			 
+			 
+             //catch
+             .catch(errorX => {  //this name {errorX} must be the same as in {alert("Rejected: " + errorX))}
+                     // вторая функция - запустится при вызове reject
+                     alert("Rejected: " + errorX); // errorX is a rejectMe argument
+			         hidePreloader(); 
+			         $("#result").stop().fadeOut("slow",function(){ $(this).html(" Promise failed")}).fadeIn(2000);
+                 });
 	   
 	}); 
 
