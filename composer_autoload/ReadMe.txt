@@ -9,7 +9,7 @@ It says that classes with namespace {Cubet} should be loaded from folder {vendor
 It says that non PSR-4 classes must be found in folder {library}
 
 6. CLI-> $ composer dump-autoload -o      -> This CLI must be run after each composer edits to update the autoload.
-7. Add to index.php {require 'vendor/autoload.php'; //Composer autoload}
+7. Add Composer autoload to index.php {require 'vendor/autoload.php';}
 
 
 #Composer.json doesnot accept any comments, u can use "_comment": " comments goes here" in it.
