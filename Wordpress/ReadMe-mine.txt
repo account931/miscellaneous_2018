@@ -14,3 +14,25 @@ http://localhost/wordpress_woocommerce/wordpress-4.9.8-ru_RU/wordpress/wp-admin/
 #To change admin password: go phpMyAdmin-> wp-users-> press "Pencil" over admin line-> for password select function "MD5"-> change password->save
 
 #header.php по умолчанию и некоторые другие файлы шаблонов находятся в файле wp-includes/theme-compat/
+
+
+================================================================================================
+#front page text, other pages & blogs text is stored in SQL DB-> wp_posts
+#header, footer text is stored in ..../wordpress/wp-content/YOUR-THEME 
+
+#To edit front page => go to admin panel => PAGES-> ALL PAGES -> FRONT PAGE . Or go SQL DB-> wp_posts -> FRONT PAGE(post_title column). All front page is just a one row record in wp_posts.
+#To edit, add, delete blog records(which are displayed by link "Blog") =>go to admin panel => go to RECORDS. Or  go SQL DB-> -> wp_posts ->
+
+#To change themes-> Внешний вид -> Темы
+
+To make the SQL record in wp_posts to be blog, change the SQL field "post_type" to "post"
+
+#To change "ЕЩЕ один сайт на Wordpress" (or meaning the title of site) -> SQL -> wp_options -> field {blogdescription}. Or Admin Console-> Settings->...
+
+#To change what page to display on frontPAge(on start)-> WP Admin Console-> Settings-> Reading-> ....
+
+#Add a new page-> WP Admin Console-> Pages-> Add new. Then add it to menu:WP Admin Console-> Appearance-> Menu-> Add to menu
+
+#Change login page-> https://codex.wordpress.org/Customizing_the_Login_Form
+
+#edit some text in footer: go to ..../wordpress/wp-content/YOUR-THEME -> template_parts-> footer-> site-info (it's diffrent in different themes, sometimes it is in index.php, footer.php)
