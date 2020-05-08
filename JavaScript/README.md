@@ -32,11 +32,13 @@ Table on content:
 	
 	
 //=========================================================
+
 2.JS Closure
 
 https://itvolution.wordpress.com/2017/08/26/%D1%8F%D0%B7%D1%8B%D0%BA-javascript-%D0%B7%D0%B0%D0%BC%D1%8B%D0%BA%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C-%D0%B2%D0%B8%D0%B4%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8-%D0%BB/
 
 ------Var 1 ------
+
   function makeCounter() {
       var currentCount = 1;
 
@@ -54,6 +56,7 @@ https://itvolution.wordpress.com/2017/08/26/%D1%8F%D0%B7%D1%8B%D0%BA-javascript-
 
 
 ------ Var 2 ------
+
   function makeCounter() {
       var currentCount = 1;
 
