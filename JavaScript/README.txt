@@ -1,8 +1,8 @@
-<h2>#JS miscellaneous</h2>
+<b>#JS miscellaneous</b>
 
-<h3>#Some other JS tips(callbacks,etc) can be found in {98.3.V.A example references (CSS,JS,Php)} in => 
+#Some other JS tips(callbacks,etc) can be found in {98.3.V.A example references (CSS,JS,Php)} in => 
                https://github.com/account931/yii2_REST_and_Rbac_2019/blob/master/Readme_YII2_mine_Common_Comands.txt
-</h3>
+
 			   
 			   
 //=================================================== 			   
