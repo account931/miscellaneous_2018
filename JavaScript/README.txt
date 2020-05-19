@@ -1,18 +1,19 @@
-№JS miscellaneous
+<h2>#JS miscellaneous</h2>
 
-#Some other JS tips(callbacks,etc) can be found in {98.3.V.A example references (CSS,JS,Php)} in => 
+<h3>#Some other JS tips(callbacks,etc) can be found in {98.3.V.A example references (CSS,JS,Php)} in => 
                https://github.com/account931/yii2_REST_and_Rbac_2019/blob/master/Readme_YII2_mine_Common_Comands.txt
-
+</h3>
 			   
 			   
-			   
+//=================================================== 			   
 #Table on content:
 
 1. "+" operator in JS vs PHP. {String + Int}
 2.JS Closure
 3.JS Class
-
-
+4. Arrow functions ES6
+5. Promise (axios example)
+6. Cors in Ajax (Cross-origin resource sharing)(Same-Origin-Policy) => see https://github.com/account931/sms_Textbelt_Api_React_JS/blob/master/README_MY.txt
 
 
 
@@ -210,3 +211,51 @@ https://itvolution.wordpress.com/2017/08/26/%D1%8F%D0%B7%D1%8B%D0%BA-javascript-
   };
 
 
+  
+  
+  
+  
+  
+ //=================================================== 
+ 4. Arrow functions ES6
+ 
+// function expression: два способа в ES6
+var f = function() { return 42; }
+var f = () => 42;
+
+// function declaration: один способ в ES6
+function f() {
+  return 42;
+}
+
+
+
+
+ //=================================================== 
+5. Promise (axios example)
+
+function axiosTest () {
+     var strr = [];
+       axios.get(url)
+       .then(function(response){
+               strr.push(response.data);
+        })
+        .catch(function(error){
+               console.log(error);
+           });
+        return strr;
+} 
+
+
+
+
+ //=================================================== 
+6. Cors in Ajax (Cross-origin resource sharing)(Same-Origin-Policy) => see https://github.com/account931/sms_Textbelt_Api_React_JS/blob/master/README_MY.txt
+
+
+
+//=================================================== 
+//=================================================== 
+//=================================================== 
+//=================================================== 
+//=================================================== 
