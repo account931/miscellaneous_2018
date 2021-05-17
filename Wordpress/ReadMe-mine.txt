@@ -36,3 +36,39 @@ To make the SQL record in wp_posts to be blog, change the SQL field "post_type" 
 #Change login page-> https://codex.wordpress.org/Customizing_the_Login_Form
 
 #edit some text in footer: go to ..../wordpress/wp-content/YOUR-THEME -> template_parts-> footer-> site-info (it's diffrent in different themes, sometimes it is in index.php, footer.php)
+
+
+
+=================== 2021 ===========================
+
+
+#Login page => /wp-login.php   => <label for="user_login
+
+# Remove meta, remove archieve => Appearance -> Widgets -> turn off
+
+# Edit "One more Wordpress site" => Appearance -> Header  Or => Settings
+
+#Change admin language => Settings
+#Front page (static or posts) => Customize-> Homepage settings 
+
+#Change side-bar appearnce/position => Appearance -> General settings -> Posts & pages Settings
+
+# Set homepage (static or posts) => Settings -> Reading
+
+# Set theme designed page!!!! => go "Plugins" => intall "Starter Templates — Elementor, Gutenberg & Beaver Builder Templates" 
+      => after go to "Appearance" -> Starter template -> if 1st time visit select "Elementor"
+      ->choose template -> import all or selected pages -> Go to "Pages" -> make imported pages Published -> Go to "Menu" -> add it to menu 
+      
+      
+ ----------- Woocommerce ------------     
+      
+# Woocommerce -> intall "Woocommerce" in pugin section
+# Edit loop of all products at frontstore => \wp-content\plugins\woocommerce\templates\loop. 
+   For example, Edit price at => price.php, edit "Add to cart" button at => add-to-cart.php
+# Edit one single product template (when user clicks it) =>   \wp-content\plugins\woocommerce\templates\single-product
+
+# Fix thumbnail products image => Appearance -> Customize -> Woocommerce -> Product Image ->  Uncropped Images will display using the aspect ratio in which they were uploaded -> Publish
+# Products per row, Rows per page => Appearance -> Customize -> Woocommerce -> Product Catalog
+
+# Remove all footer and "Built with Storefront & WooCommerce" => go to => wp-content\themes\storefront\function.php => add code =>  remove_action(storefront_footer, storefront_credit,20);
+# Var_2, just edit footer => In the file: themes>storefront>inc>storefront-template-functions.php => edit function storefront_credit()

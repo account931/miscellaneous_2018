@@ -3,7 +3,7 @@
 #Some other JS tips(callbacks,etc) can be found in {98.3.V.A example references (CSS,JS,Php)} in => 
                https://github.com/account931/yii2_REST_and_Rbac_2019/blob/master/Readme_YII2_mine_Common_Comands.txt
 
-			   
+# Other additional Php tips (types, closure, Solid, design patterns) => see https://github.com/account931/Laravel-Yii2_Comment_Vote_widgets/blob/master/blog_Laravel/ReadMe_Laravel_Com_Commands.txt			   
 			   
 //=================================================== 			   
 #Table on content:
